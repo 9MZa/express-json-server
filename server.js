@@ -6,9 +6,6 @@ const express = require('express')
 
 var server = express();
 
-server.use('/api', jsonServer.router('db.json'));
-
-
 server.use(middlewares);
 server.use(router);
 
